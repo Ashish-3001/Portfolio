@@ -1036,6 +1036,47 @@ noscript {
   opacity: 1;
 }
 
+/* Mobile Styling for the Timeline */
+@media (max-width: 768px) {
+  .timeline {
+    display: block; /* Stack items vertically */
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .timeline-item {
+    width: 90%; /* Take up most of the screen width */
+    margin: 20px auto; /* Center the items and add spacing */
+    text-align: left;
+    padding: 5px;
+  }
+
+  .timeline-item h3 {
+    font-size: 1.5rem; /* Smaller font size for mobile */
+    font-weight: 600;
+  }
+
+  .timeline-item p {
+    font-size: 1rem; /* Smaller font size for better readability */
+    line-height: 1.5;
+  }
+
+  .timeline-item::before {
+    top: -25px;
+    left: 0;
+    transform: translateX(0); /* Adjust alignment for mobile */
+    font-size: 1rem;
+  }
+
+  /* Hover effects */
+  .timeline-item:hover {
+    transform: none; /* Disable scale effect on mobile */
+  }
+
+  .timeline-item:hover::before {
+    opacity: 1; /* Keep the hover effect for before element */
+  }
+}
 
 /* about section ends
  */
@@ -1280,7 +1321,270 @@ noscript {
   font-weight: 400;
   margin-top: 10px;
 }
+.experience-projects-section-container {
+  padding: 150px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
 
+.experience-projects-section-div {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-heading-article {
+  font-size: 3rem;
+  font-family: "Fira Code";
+  font-weight: 500;
+  background-image: linear-gradient(
+    90deg,
+    var(--static-heading-gradient-blue),
+    var(--static-heading-gradient-pink)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.experience-boxes-div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.experience-box-wrapper {
+  width: 100%;
+}
+
+.experience-box {
+  background-image: linear-gradient(
+      to bottom right,
+      var(--tech-stack-box-first-color),
+      var(--tech-stack-box-second-color)
+  );
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: stretch;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid var(--tech-stack-box-border-color);
+}
+.content-div {
+  flex: 65%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+.info-div {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+.button-div {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: stretch;
+}
+.info-button {
+  flex: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  
+}
+.info-button-ezee{
+  flex: 33.33%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+} 
+.image-div {
+  flex: 35%;
+}
+
+.experience-image {
+  width: 100%;
+  height: 100%; /* Ensure the image fills the container's height */
+  object-fit: cover; /* Scale the image to cover without distortion */
+  border-radius: 8px;
+}
+.experience-image-1{
+  width: 100%;
+  height: auto; /* Ensure the image fills the container's height */
+  object-fit: cover; /* Scale the image to cover without distortion */
+  border-radius: 8px;
+}
+.experience-image-2{
+  width: 100%;
+  height: auto; /* Ensure the image fills the container's height */
+  object-fit: cover; /* Scale the image to cover without distortion */
+  border-radius: 8px;
+}
+.view-project-button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  color: var(--color-light-blue);
+  background-color: var(--tech-stack-box-second-color);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.view-project-button:hover {
+  background-color: var(--tech-stack-box-first-color);
+  color: var(--color-white);
+  transform: scale(1.05);
+  box-shadow: 0px 4px 12px #71cbff;
+ 
+} 
+
+.ExperienceHeading {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--color-white);
+}
+
+.ExperienceSubHeading {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--color-white);
+}
+
+.ExperienceRole {
+  font-size: 1.5rem;
+  color: var(--color-light-blue);
+  font-weight: 500;
+}
+
+.ExperienceDescription {
+  font-size: 1.6rem;
+  color: gray;
+  font-weight: 400;
+  margin-top: 10px;
+}
+
+
+/* Base styles for larger screens are unchanged */
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .experience-projects-section-div {
+      width: 80%;
+  }
+
+  .section-heading-article {
+      font-size: 2.5rem;
+  }
+
+  .experience-boxes-div {
+      gap: 30px;
+  }
+
+  .ExperienceHeading {
+      font-size: 2rem;
+  }
+
+  .ExperienceSubHeading {
+      font-size: 1.5rem;
+  }
+
+  .ExperienceRole {
+      font-size: 1.3rem;
+  }
+
+  .ExperienceDescription {
+      font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .experience-projects-section-container {
+      padding: 80px 0;
+  }
+
+  .experience-projects-section-div {
+      width: 90%;
+  }
+
+  .section-heading-article {
+      font-size: 2.2rem;
+  }
+
+  .experience-box {
+      flex-direction: column;
+      padding: 15px;
+  }
+
+  .content-div {
+      flex: 100%;
+      margin-bottom: 15px;
+  }
+
+  .image-div {
+      flex: 100%;
+      margin-bottom: 15px;
+  }
+
+  .ExperienceHeading {
+      font-size: 1.8rem;
+  }
+
+  .ExperienceRole {
+      font-size: 1.2rem;
+  }
+
+  .ExperienceDescription {
+      font-size: 1.2rem;
+  }
+
+  .view-project-button {
+      font-size: 1rem;
+      padding: 8px 16px;
+  }
+}
+
+@media (max-width: 576px) {
+  .section-heading-article {
+      font-size: 2rem;
+  }
+
+  .ExperienceHeading {
+      font-size: 1.5rem;
+  }
+
+  .ExperienceRole {
+      font-size: 1rem;
+  }
+
+  .ExperienceDescription {
+      font-size: 1rem;
+  }
+
+  .view-project-button {
+      font-size: 0.9rem;
+      padding: 6px 12px;
+  }
+  .experience-image-2 {
+    display: none;
+  }
+}
 
 /* Project visit button */
 

@@ -268,17 +268,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               </div>
             </button>
             
-            
-              <div class="soundtogglebuttoncontainer"
-                id="soundtogglebuttoncontainer">
-                <input type="checkbox" id="switchforsound"
-                  onclick="playpause()" />
-                <label for="switchforsound" id="labelforsound" tabindex="0"
-                  aria-label="switch sound"
-                  class="needtobeinvert"></label>
-              </div>
             </div>
-            <!-- setting div ends -->
+ 
           </div>
           <!-- contact-btn-div -->
         </div>
@@ -418,7 +409,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           </div>
       
           <div class="experience-boxes-div">
-            <!-- Experience Box 1 -->
+            <!-- Experience Box Template -->
             <div data-aos="fade-up" class="experience-box-wrapper">
               <div class="experience-box">
                 <div class="content-div">
@@ -429,10 +420,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     managing a team of five interns, delivering dynamic reports, automated reminders, mail integration, and
                     interactive graphs reducing manual maintenance and reporting time by 50% and boosting team productivity by 25%.
                     <br>
-                    Streamlined client data management, including demos, product milestones, payments, and invoices, by implementing a 
+                    Streamlined client data management, including demos, product milestones, payments, and invoices, by implementing a
                     scalable database architecture and intuitive UI/UX with Figma, improving data retrieval speed.
                     <br>
-                    Contributed to upgrading a product from Windows to a web-based platform, enhancing accessibility 
+                    Contributed to upgrading a product from Windows to a web-based platform, enhancing accessibility
                     and reducing maintenance costs by 30% and increasing user reach.
                   </p>
                   <button onclick="window.open('https://www.ibsfintech.com/solutions/', '_blank')" class="view-project-button">
@@ -444,9 +435,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 </div>
               </div>
             </div>
-      
-            <!-- Experience Box 2 -->
+            
             <div data-aos="fade-up" class="experience-box-wrapper">
+
               <div class="experience-box">
                 <div class="content-div">
                   <article class="ExperienceHeading">Ful.io</article>
@@ -469,140 +460,88 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 </div>
               </div>
             </div>
+            <!-- For nested project experiences under TekHAB IT Solutions LLP -->
       
-            <!-- Experience Box 3 -->
+            <!-- TekHAB IT Solutions LLP Experience -->
             <div data-aos="fade-up" class="experience-box-wrapper">
               <div class="experience-box">
                 <div class="content-div">
                   <article class="ExperienceHeading">TekHAB IT Solutions LLP</article>
                   <p class="ExperienceRole">Co-Founder | June 2020 – July 2022</p>
                   <p class="ExperienceDescription">
-                    During the peak of COVID-19, I Co-founded and led a start-up to help MSME clients establish their online presence, 
+                    During the peak of COVID-19, I Co-founded and led a start-up to help MSME clients establish their online presence,
                     addressing the urgent shift to digital through custom-built web and mobile applications.
-                    I was overseeing end-to-end development, client communications, and project delivery, 
-                    demonstrating strong leadership, technical expertise, and entrepreneurial skills.
-                    <br>
-                    <div data-aos="fade-up" class="experience-box-wrapper">
-                      <div class="experience-box">
-                        <div class="info-div">
-                          <article class="ExperienceSubHeading">Unthought</article>
-                          <p class="ExperienceRole">Own Saas Produt for young entrepreneurs</p>
-                          <p class="ExperienceDescription">
-                            This is a platform for young entrepreneurs in the initial stage of their business. This app can be used for finding team members and co-funders, 
-                            finding mentors in various sectors, virtual meetings and events, peer to peer support and finally finding investors for financial support
-                            
-                          </p>
-                          <div  class="button-div">
-                            <div class="info-button">
-                              <button onclick="window.open('https://docs.google.com/presentation/d/1imsjHJA9bykE5JgTwjZQSkw2bq0cH3Oj/edit?usp=sharing&ouid=107867668970639832954&rtpof=true&sd=true', '_blank')" class="view-project-button">
-                                View Picth Deck
-                              </button>
-                            </div>
-                            <div  class="info-button">
-                              <button onclick="window.open('./src/pdf/Unthought Documentation.pdf', '_blank')" class="view-project-button">
-                                View Documentation
-                              </button>
-                            </div>
-                          </div>
-                          <p class="ExperienceDescription">
-                            This is a Hybrid mobile App with Ionic and Angular frontend, Django and Python backend, enabling real-time communication through WebSockets 
-                            and integrated APIs for payments, OTP verification.
-                          </p>
-                          <div  class="button-div">
-                            <div class="info-button">
-                              <button onclick="window.open('https://github.com/Ashish-3001/Unthought-Backend', '_blank')" class="view-project-button">
-                                GitHub - Back-End Code
-                              </button>
-                            </div>
-                            <div class="info-button">
-                              <button onclick="window.open('https://github.com/Ashish-3001/Unthought-FrontEnd', '_blank')" class="view-project-button">
-                                GitHub - Front-End Code
-                              </button>
-                            </div>
-                            
-                          </div>
-                        </div>
+                  </p><br>
+                  <div class="nested-projects">
+      
+                    <!-- Project Unthought -->
+                    <div class="nested-project">
+                      <article class="ExperienceSubHeading">Unthought</article>
+                      <p class="ExperienceRole">Own SaaS Product for young entrepreneurs</p>
+                      <p class="ExperienceDescription">
+                        This platform enables young entrepreneurs to connect with team members, mentors, investors, and more.
+                      </p>
+                      <div class="button-group">
+                        <button onclick="window.open('https://docs.google.com/presentation/d/1imsjHJA9bykE5JgTwjZQSkw2bq0cH3Oj/edit?usp=sharing&ouid=107867668970639832954&rtpof=true&sd=true', '_blank')" class="view-project-button">
+                          View Pitch Deck
+                        </button>
+                        <button onclick="window.open('./src/pdf/Unthought Documentation.pdf', '_blank')" class="view-project-button">
+                          View Documentation
+                        </button>
                       </div>
                     </div>
                     <br>
-                    <div data-aos="fade-up" class="experience-box-wrapper">
-                      <div class="experience-box">
-                        <div class="info-div">
-                          <article class="ExperienceSubHeading">Ezee Jobs</article>
-                          <p class="ExperienceRole">A MVP Saas Produt built for a client</p>
-                          <p class="ExperienceDescription">
-                            This is a platform with a subscription-based model that connects Job seekers and Employers. Searching for jobs and applying for jobs 
-                            is made easy and it is based on a subscription model for Job Seekers related to the Hospitality Industry.
-                          </p>
-                          <p class="ExperienceDescription">
-                            Implemented an engaging, responsive interface using Ionic and Angular, 
-                             supported by Django and Python APIs to streamline job searches and applications.
-                          </p>
-                          <div  class="button-div">
-                            <div class="info-button-ezee">
-                              <button onclick="window.open('https://github.com/Ashish-3001/HireeDatabase', '_blank')" class="view-project-button">
-                                GitHub - Back-End Code
-                              </button>
-                            </div>
-                            <div class="info-button-ezee">
-                              <button onclick="window.open('https://github.com/Ashish-3001/Ezee-Jobs', '_blank')" class="view-project-button">
-                                GitHub - Front-End Code
-                              </button>
-                            </div>
-                            <div  class="info-button-ezee">
-                              <button onclick="window.open('./src/pdf/UI Design and App flow.pdf', '_blank')" class="view-project-button">
-                                View UI/UX Design praposal
-                              </button>
-                            </div>
-                          </div>
-                        </div>
+                    <!-- Project Ezee Jobs -->
+                    <div class="nested-project">
+                      <article class="ExperienceSubHeading">Ezee Jobs</article>
+                      <p class="ExperienceRole">MVP SaaS Product built for a client</p>
+                      <p class="ExperienceDescription">
+                        A platform connecting job seekers and employers in the hospitality industry, based on a subscription model.
+                      </p>
+                      <div class="button-group">
+                        <button onclick="window.open('https://github.com/Ashish-3001/HireeDatabase', '_blank')" class="view-project-button">
+                          GitHub - Back-End Code
+                        </button>
+                        <button onclick="window.open('https://github.com/Ashish-3001/Ezee-Jobs', '_blank')" class="view-project-button">
+                          GitHub - Front-End Code
+                        </button>
                       </div>
                     </div>
                     <br>
-                    <div data-aos="fade-up" class="experience-box-wrapper">
-                      <div class="experience-box">
-                        <div class="info-div">
-                          <article class="ExperienceSubHeading">WordPress</article>
-                          <p class="ExperienceRole">Created few WordPress websites for clients</p>
-                          <p class="ExperienceDescription">
-                            During COVID-19 there a need for online presence for small businesses and individuals. We capitalized that created few WordPress websites for some clients.
-                            Below are some examples: 
-                          </p>
-                          <div  class="button-div">
-                            <div class="info-button">
-                              <button onclick="window.open('https://saralaconstructions.com/', '_blank')" class="view-project-button">
-                                Sarala Constructions
-                              </button>
-                            </div>
-                            <div class="info-button">
-                              <button onclick="window.open('http://www.rotarykoramangala.org/', '_blank')" class="view-project-button">
-                                Rotary Koramangala
-                              </button>
-                            </div>
-                          </div>
-                        </div>
+                    <!-- WordPress Projects -->
+                    <div class="nested-project">
+                      <article class="ExperienceSubHeading">WordPress</article>
+                      <p class="ExperienceRole">Client WordPress Websites</p>
+                      <p class="ExperienceDescription">
+                        Developed WordPress websites for clients during COVID-19 to help establish online presence.
+                      </p>
+                      <div class="button-group">
+                        <button onclick="window.open('https://saralaconstructions.com/', '_blank')" class="view-project-button">
+                          Sarala Constructions
+                        </button>
+                        <button onclick="window.open('http://www.rotarykoramangala.org/', '_blank')" class="view-project-button">
+                          Rotary Koramangala
+                        </button>
                       </div>
                     </div>
-                  </p>
+      
+                  </div>
                 </div>
                 <div class="image-div">
                   <img src="src/png/Tek HAB.jpeg" alt="Company logo" class="experience-image-1">
                   <img src="src/png/UnTaughtLogo.png" alt="Company logo" class="experience-image-2">
-                  <img src="src/png/Sarala.png" alt="Company logo" class="experience-image-2">
                 </div>
               </div>
             </div>
       
-            <!-- Experience Box 4 -->
+            <!-- BotPlay Experience Box -->
             <div data-aos="fade-up" class="experience-box-wrapper">
               <div class="experience-box">
                 <div class="content-div">
                   <article class="ExperienceHeading">BotPlay</article>
                   <p class="ExperienceRole">Full Stack Developer Intern | November 2021 – January 2022</p>
                   <p class="ExperienceDescription">
-                    Enhanced user interfaces for a rich, responsive experience, delivering key frontend features like split screen, 
-                    auto-save, dynamic alerts, search functionality, and text formatting with color coding, improving user efficiency by 20%. 
-                    Also resolved critical bugs and integrated APIs for seamless data retrieval and formatting
+                    Enhanced user interfaces for a responsive experience, delivering key frontend features and fixing bugs for better user interaction.
                   </p>
                   <button onclick="window.open('./src/pdf/Ashish CNVV_LOR_botplay.pdf', '_blank')" class="view-project-button">
                     View Certificate
@@ -613,43 +552,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 </div>
               </div>
             </div>
-
-
-            <!-- Experience Box 5 -->
+      
+            <!-- Mr. Bot Publication -->
             <div data-aos="fade-up" class="experience-box-wrapper">
               <div class="experience-box">
                 <div class="content-div">
                   <article class="ExperienceHeading">Mr. Bot - Publication</article>
-                  <p class="ExperienceRole">Mr. Bot - A Survey on Arduino-Based Autonomous Robotic Vehicle</p>
+                  <p class="ExperienceRole">A Survey on Arduino-Based Autonomous Robotic Vehicle</p>
                   <p class="ExperienceDescription">
-                    Mr. Bot acts as a helping hand and tries to reduce the human effort and is the first step in the involvement of robots indaily use.
-                    It is a robotic vehicle that has the capability to reach a particular destination to deliver small items and/or convey messages. 
-                    It has sufficient intelligence to follow the shortest path in the provided space and detect the obstacles in day and night vision.
-                    Mr. Bot acts as helper and it can be summoned to any required place and it can be sent to any destination to deliver small objects.
-                    <br><br>
-                    Developed complete code for motors, sensors, and obstacle detection/avoidance algorithms in Arduino software for "Mr. Bot”, 
-                    enhancing its navigation and obstacle-avoidance capabilities by 80%.
-                    <br><br>
-                    Presented and co-authored a research paper that has been published at the 
-                    4th International Conference on Data Sciences, Machine Learning, and Applications (ICDSMLA 2022), Springer.
-                    <br>
+                    Developed code for motors, sensors, and obstacle avoidance for "Mr. Bot". Co-authored research paper, published in ICDSMLA 2022, Springer.
                   </p>
-                  <div  class="button-div">
-                    <div class="info-button-ezee">
-                      <button onclick="window.open('https://link.springer.com/chapter/10.1007/978-981-99-2058-7_6', '_blank')" class="view-project-button">
-                        View Publication
-                      </button>
-                    </div>
-                    <div class="info-button-ezee">
-                      <button onclick="window.open('./src/pdf/Bot_Survey Paper.pdf', '_blank')" class="view-project-button">
-                        View Survey Paper
-                      </button>
-                    </div>
-                    <div  class="info-button-ezee">
-                      <button onclick="window.open('./src/pdf/13_Ashish C V N N_Mr. Bot - A Survey on Arduino Based Autonomous Robotic Vehicle.pdf', '_blank')" class="view-project-button">
-                        View Certificate
-                      </button>
-                    </div>
+                  <div class="button-group">
+                    <button onclick="window.open('https://link.springer.com/chapter/10.1007/978-981-99-2058-7_6', '_blank')" class="view-project-button">
+                      View Publication
+                    </button>
                   </div>
                 </div>
                 <div class="image-div">
@@ -661,6 +577,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           </div>
         </div>
       </section>
+      
       
     </main>
     <!-- main ends here -->
