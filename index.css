@@ -1728,9 +1728,6 @@ footer {
   line-height: 9vw;
   text-shadow: 0 0 3vw #f40a35;
   text-indent: 2px;
-  animation: neon 1s ease infinite;
-  -moz-animation: neon 1s ease infinite;
-  -webkit-animation: neon 1s ease infinite;
 }
 
 @keyframes neon {
